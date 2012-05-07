@@ -28,7 +28,7 @@ var google, django, gettext;
                 /*
                 // FIXME: Fails if there's an inline which has the same field name as
                 //        the edited object.
-                
+
                 // Extract fieldname and original language code from class attribute
                 var css_lang_suffix = 'modeltranslation-field-';
                 var name = '';
