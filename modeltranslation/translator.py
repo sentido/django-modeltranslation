@@ -128,8 +128,9 @@ class Translator(object):
 
         for model in model_or_iterable:
             if model in self._registry:
-                raise AlreadyRegistered('The model %s is already registered '
-                                        'for translation' % model.__name__)
+                continue
+#                raise AlreadyRegistered('The model %s is already registered '
+#                                        'for translation' % model.__name__)
 
             # If we got **options then dynamically construct a subclass of
             # translation_opts with those **options.
